@@ -144,7 +144,7 @@ def upload_documents(request):
         employee.save()
         return redirect('upload_documents')  # page reload karke files dikhaye
 
-    return render(request, 'upload_documents.html', {'employee': employee})
+    return render(request, 'employees/upload_documents.html', {'employee': employee})
 
 # Joining Process
 def joining_process(request):
